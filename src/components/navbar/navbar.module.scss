@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    @media (width < 768px) {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #4793FF;
+    text-transform: uppercase;
+
+    @media (width < 576px) {
+        font-size: 20px;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    
+    &__input {
+        background: rgba(71, 147, 255, 0.2);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 9px 20px;
+
+        &::placeholder {
+            color: var(--color);
+        }
+
+        @media (width < 576px) {
+            font-size: 20px;
+            max-width: 284%;
+            width: 100%;
+        }
+    }
+}
